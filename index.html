@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test Webapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startWindow">
+        <div class="modalBox">
+            <h1>Typing Test</h1>
+            <p>Test your typing speed in just a minute! The timer will begin as soon as you start typing.</p>
+            <button id="startButton">Start Test</button>
+        </div>
+    </div>
+
+    <div id="timer"></div>
+
+    <div id="wrapper">
+        <div id="paraContainer">
+            <p id="testPara"></p>
+        </div>
+
+        <textarea id="textArea" name="textarea" rows="5" cols="50" 
+                  onpaste="return false" 
+                  placeholder="The countdown begins once you start typing."></textarea>
+    </div>
+
+    <div id="newTestWindow">
+        <div class="modalBox">
+            <h1>Time's Up!</h1>
+            <p id="finalScore"></p>
+            <button id="newTestButton">Click to try again!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
